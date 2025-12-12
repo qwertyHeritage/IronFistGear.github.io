@@ -1,2 +1,2 @@
-# IronFistGear.githun.io
-Website (Web Programming I)
+# IronFistGear.github.io
+Website for Web Programming I
