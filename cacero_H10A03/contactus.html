@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+    <header>
+        <div><img src="images/logo.png" alt="Logo"></div>
+        <div class="title">
+            <h1 class="neon-glow">Iron Fist Gear</h1>
+            <p>ironfistgear.ca | Train hard, Play hard.</p>
+        </div>
+        <div><img src="images/shopping-cart.png" alt="Shopping Cart"></div>
+    </header>
+
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Contact Iron Fist Gear</h1>
+        <p>We are ready to connect! Whether you have questions about equipment, tournament rules, or partnerships, reach
+            out to us using the information below.</p>
+
+        <section>
+            <h2>General Contact Information</h2>
+            <p>The best way to reach us is by email or phone during our office hours.</p>
+
+            <h3>Email & Phone</h3>
+            <ul class="contact-info-list">
+                <li><strong>Email:</strong> <a href="mailto:info@ironfistgear.ca">info@ironfistgear.ca</a></li>
+                <li><strong>Phone:</strong> (613) 123-4567</li>
+                <li><strong>Phone Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM (EST)</li>
+            </ul>
+            <h2>Our Location & Office Hours</h2>
+            <p>While we primarily operate online, our main office is located near downtown Ottawa. Please call ahead to
+                schedule an in person meeting.</p>
+            <table id="hours-table">
+                <caption>Store Hours of Operation</caption>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>10:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>11:00 AM - 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">In-person meetings outside of these hours are by appointment only.</td>
+                </tr>
+            </table>
+            <h2>Our suppliers</h2>
+
+            <ul class="related-links-list">
+                <li><a href="https://fullcontactsports.ca/">Full contact Sports</a> - Full Contact Sports is Canada's
+                    Fight Sports Store and retailer for boxing, kickboxing, mma and muay thai.</li>
+                <li><a href="https://www.bestbuy.ca/en-ca">Best buy</a> - Best Buy Canada is the largest consumer
+                    electronics retailer in the country.</li>
+            </ul>
+
+            <h2>Fighting game community</h2>
+
+            <ul class="related-links-list">
+                <li><a href="https://ontariofgc.ca/">Ontario FGC</a> - News, guides, and
+                    forums for all fighting games.</li>
+            </ul>
+        </section>
+
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="contactus.html" method="POST">
+
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="fullName" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="emailAddress" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Inquiry Type</legend>
+                    <input type="radio" id="equipment" name="inquiryType" value="Equipment" required>
+                    <label for="equipment">Equipment Inquiry</label><br>
+
+                    <input type="radio" id="tournament" name="inquiryType" value="Tournament">
+                    <label for="tournament">Tournament Registration/Rules</label><br>
+
+                    <input type="radio" id="partnership" name="inquiryType" value="Partnership">
+                    <label for="partnership">Partnership Opportunity</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How should we contact you?</legend>
+                    <label for="contact-method">Preferred Contact Method:</label>
+                    <select id="contact-method" name="contactMethod">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone Call</option>
+                        <option value="text">Text Message (SMS)</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Subscribe to Our Newsletters (Select all that apply)</legend>
+                    <input type="checkbox" id="news-deals" name="subscribe" value="Deals">
+                    <label for="news-deals">Weekly Deals & Discounts</label><br>
+
+                    <input type="checkbox" id="news-events" name="subscribe" value="Events">
+                    <label for="news-events">Upcoming Event Announcements</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </fieldset>
+                <div class="form-actions">
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Iron Fist Gear</p>
+        <p class="sources-text">
+            Image Sources:
+            Logo image creator: Christian Acero
+        </p>
+        <nav class="bottom-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="shop.html">Shop</a>
+                <li></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html" class="last-bottom-nav">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

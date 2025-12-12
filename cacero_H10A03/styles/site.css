@@ -1,0 +1,429 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colorNight: #0B0C10;
+    --colorRed: #C3073F;
+    --colorWine: #6F2232;
+    --colorGunmetal: #1F2833;
+    --textColor: #FFFFFF;
+    --font: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--colorNight);
+    color: var(--textColor);
+}
+
+header {
+    background-color: var(--colorGunmetal);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* advanced features of CSS*/
+.neon-glow {
+    color: var(--textColor);
+    text-shadow:
+        0 0 5px var(--colorRed),
+        0 0 10px var(--colorRed),
+        0 0 20px var(--colorWine),
+        0 0 40px var(--colorWine),
+        0 0 80px var(--colorWine);
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.title h1+p {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+header div img {
+    inline-size: auto;
+    block-size: 100px;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorWine);
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: bold;
+}
+
+/* advanced features of CSS*/
+.top-nav ul li:not(:last-child) {
+    border-right: 2px solid var(--colorNight);
+}
+
+nav ul li a:hover {
+    color: var(--colorRed);
+}
+
+.top-nav ul li {
+    padding: 15px 15px;
+    display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+main section {
+    border: solid 3px var(--textColor);
+    overflow: auto;
+    /* advanced features of CSS*/
+    position: relative;
+}
+
+main .section a {
+    display: inline-block;
+    border: solid 3px var(--colorWine);
+    padding: 10px;
+    background-color: var(--colorRed);
+}
+
+.main-image {
+    inline-size: 100%;
+    block-size: auto;
+    margin-block-end: 15px;
+}
+
+main video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.fighter-image {
+    /* advanced features of CSS*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#fighter {
+    height: 325px;
+}
+
+.about-us-image {
+    display: inline;
+    inline-size: 50%;
+    block-size: auto;
+    margin-block-end: 15px;
+    margin: 5px;
+    border: solid;
+    clear: both;
+}
+
+footer {
+    background-color: var(--colorWine);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorRed);
+}
+
+
+.bottom-nav a::before {
+    content: "|";
+    color: var(--textColor);
+    margin: 10px;
+}
+
+.last-bottom-nav::after {
+    content: "|";
+    color: var(--textColor);
+    margin: 10px;
+}
+
+.bottom-nav ul li {
+    margin: 0;
+}
+
+.padded-section {
+    padding: 15px;
+    margin-block-end: 20px;
+    inline-size: 90%;
+    margin-inline: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#event-logo {
+    display: block;
+    margin: 20px auto;
+}
+
+.padded-section a {
+    color: var(--colorRed);
+}
+
+
+.event-detail {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background-color: var(--colorGunmetal);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.event-detail li strong {
+    padding: 10px 0;
+    line-height: 1.5;
+    border-bottom: 1px dashed var(--colorNight);
+}
+
+.event-detail li strong {
+    color: var(--colorRed);
+    font-weight: bold;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+}
+
+.staff-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.staff-member img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: solid 3px var(--colorWine);
+    margin-block-end: 15px;
+}
+
+#contact-form {
+    padding: 20px;
+}
+
+#contact-form fieldset {
+    border: 1px solid var(--colorWine);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#contact-form legend {
+    color: var(--colorRed);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#contact-form label {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form select,
+#contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--colorWine);
+    background-color: var(--colorGunmetal);
+    color: var(--textColor);
+}
+
+#contact-form button[type="submit"],
+#contact-form button[type="reset"] {
+    display: inline;
+    width: 200px;
+    padding: 10px;
+    background-color: var(--colorRed);
+    color: var(--textColor);
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-left: 40px
+}
+
+#contact-form input[type="radio"],
+#contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+#contact-form fieldset input[type="radio"],
+#contact-form fieldset input[type="checkbox"],
+label {
+    display: inline-block;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+#hours-table,
+#pricing-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+#hours-table caption,
+#pricing-table caption {
+    color: var(--colorRed);
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+#hours-table th,
+#hours-table td,
+#pricing-table th,
+#pricing-table td {
+    padding: 12px;
+    border: 1px solid var(--colorWine);
+    text-align: left;
+}
+
+#pricing-table tr td:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: var(--colorRed);
+    width: 15%;
+    padding-right: 20px;
+}
+
+.contact-info-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-info-list li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--colorGunmetal);
+}
+
+.contact-info-list li a {
+    color: var(--colorRed);
+    text-decoration: underline;
+}
+
+.contact-info-list li a:hover {
+    color: var(--textColor);
+}
+
+.related-links-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.related-links-list li {
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid var(--colorWine);
+}
+
+
+.related-links-list a {
+    color: var(--colorWine);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+        border-right: none !important;
+        padding: 5px
+    }
+
+    .bottom-nav a::before {
+        content: none;
+        margin: 0;
+    }
+
+    .last-bottom-nav::after {
+        content: none;
+        margin: 0;
+    }
+}
+
+@media (min-width: 769px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        max-width: 1200px;
+        margin-inline: auto;
+        padding-top: 20px;
+    }
+
+    main>h1,
+    main>h2,
+    main>p,
+    main>ul {
+        grid-column: 1 / -1;
+        max-width: 900px;
+        margin-inline: auto;
+    }
+
+}
